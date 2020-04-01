@@ -11,12 +11,26 @@
   .text-ci-2 {
     color: #8170b6;
   }
-  .bg-ci-2 {
-    background-color: #8170b6;
+  .text-action {
+    color: #58c087;
   }
+
   .bg-ci {
     background-color: #ee9590;
   }
+
+  .bg-ci-2 {
+    background-color: #8170b6;
+  }
+
+  .bg-action {
+    background-color: #58c087;
+  }
+
+  .bg-info {
+    background-color: #f8d571;
+  }
+
   .primary {
     @apply bg-gray-100 text-gray-800;
   }

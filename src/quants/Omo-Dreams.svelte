@@ -2,18 +2,19 @@
   let dreams = [
     {
       id: 1,
-      name: "Tante Inge",
-      dream: "es noch einmal an die Nordsee zu fahren",
-      freuden: "SPAZIEREN",
-      color: "bg-ci"
-    },
-    {
-      id: 2,
       name: "Opa Jakob",
       dream: "ist es als ältester Mensch einen Marathon zu laufen",
       freuden: "FITTNESS",
       color: "bg-ci-2"
     },
+    {
+      id: 2,
+      name: "Tante Inge",
+      dream: "es noch einmal an die Nordsee zu fahren",
+      freuden: "SPAZIEREN",
+      color: "bg-ci"
+    },
+
     {
       id: 3,
       name: "Onkel Otto",
