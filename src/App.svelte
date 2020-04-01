@@ -6,6 +6,7 @@
   import OmoHeader from "./quants/Omo-Header.svelte";
   import OmoNavbar from "./quants/Omo-Navbar.svelte";
   import OmoDreams from "./quants/Omo-Dreams.svelte";
+  import OmoChat from "./quants/Omo-Chat.svelte";
 </script>
 
 <div class="app overflow-y-scroll">
@@ -18,5 +19,6 @@
   <!-- <OmoList /> -->
   <OmoDreams />
   <!-- <OmoBlog /> -->
+  <!-- <OmoChat /> -->
 
 </div>
