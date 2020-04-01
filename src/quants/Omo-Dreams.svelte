@@ -11,7 +11,7 @@
       id: 2,
       name: "Opa Jakob",
       dream: "ist es als ältester Mensch einen Marathon zu laufen",
-      freuden: "PUZZELN",
+      freuden: "FITTNESS",
       color: "bg-ci-2"
     },
     {

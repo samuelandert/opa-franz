@@ -1,20 +1,55 @@
-<div class="primary omo-shadow omo-border">
-  <img
-    src="https://source.unsplash.com/random"
-    class="primary h-64 w-full rounded-t-lg object-cover object-center"
-    alt="image" />
-  <div class="p-8">
-    <h1 class="text-xl font-black leading-tight font">
-      I am a blog article
-      <span class="text-ci-2">and these are the news</span>
-    </h1>
-    <p class="mt-2 text-gray-600">
-      I am some subtext, tell me more about all of this. lasdho askdfblihas
-      dfbalsdb lasbdfjgiwueb kabs dfjvjkasdbfka bsdfjbakjdsbkasdghfiua
-      ksfbaksbdk
-    </p>
-    <!-- <div class="mt-4">
-      <a href="www.svelte.dev" class="button">Click Me</a>
-    </div> -->
+<script>
+  let blog = [
+    {
+      id: 1,
+      title: "Alf und Emmy,",
+      subtitle: "eine wundersame Begegnung",
+      excerpt:
+        "Letzte Woche haben sich zum ersten mal zwicshen Alf und Emmy ein Generationen Tandem gebildet. Sie waren gemeinam auf dem Weg zum Schachspielen als es geschah...",
+      image: "https://source.unsplash.com/random?sig=123/800x800/"
+    },
+    {
+      id: 2,
+      title: "Wie alles began,",
+      subtitle: "die ersten Tage von Opa Franz",
+      excerpt:
+        "Peter, Philipp und Samuel hatten eines Tages den Geistesblitz Opa Franz für Memmingen zu entwickeln. Innerhalb von 24 Stunden bauten sie gemeinsam den ersten...",
+      image: "https://source.unsplash.com/random?sig=321/800x800/"
+    }
+  ];
+</script>
+
+<div class="flex justify-center my-20">
+  <div class="w-5/6">
+    <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
+    <h2 class="text-center text-5xl text-ci mt-10 mb-6">UNSER BLOG</h2>
+    <div class="text-2xl text-gray-600 text-center mb-16">
+      <p>
+        "Lass dich inspireren von offenen Begegnungen, ehrlichen Geschichten und
+        echten Freundschaften"
+      </p>
+    </div>
+    <div class="flex content-start flex-wrap">
+      {#each blog as article}
+        <div class="w-1/2 p-2">
+          <div class="primary omo-shadow omo-border">
+            <img
+              src={article.image}
+              class="primary h-64 w-full rounded-t-lg object-cover object-center"
+              alt="image" />
+            <div class="p-8">
+              <h1 class="text-xl font-black leading-tight font">
+                {article.title}
+                <span class="text-ci-2">{article.subtitle}</span>
+              </h1>
+              <p class="mt-2 text-gray-600">{article.excerpt}</p>
+              <div class="mt-4">
+                <a href="#linktoitem" class="button">Weiterlesen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/each}
+    </div>
   </div>
 </div>

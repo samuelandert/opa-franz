@@ -23,6 +23,5 @@
       </div>
     </div>
     <h2 class="text-center text-6xl text-ci">#KEINSAMKEIT</h2>
-    <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
   </div>
 </div>
