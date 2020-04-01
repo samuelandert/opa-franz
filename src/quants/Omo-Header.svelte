@@ -15,6 +15,6 @@
           title="opa franz intro video" />
       </div>
     </div>
-    <h2 class="text-center text-6xl text-ci">#KEINSAMKEIT</h2>
+    <h2 class="text-center text-6xl text-ci-2">#KEINSAMKEIT</h2>
   </div>
 </div>

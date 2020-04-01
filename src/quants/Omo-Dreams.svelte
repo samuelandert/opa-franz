@@ -4,14 +4,14 @@
       id: 1,
       name: "Opa Jakob",
       dream: "ist es als ältester Mensch einen Marathon zu laufen",
-      freuden: "FITTNESS",
+      freuden: "spielen",
       color: "bg-ci-2"
     },
     {
       id: 2,
       name: "Tante Inge",
       dream: "es noch einmal an die Nordsee zu fahren",
-      freuden: "SPAZIEREN",
+      freuden: "spazieren",
       color: "bg-ci"
     },
 
@@ -19,7 +19,7 @@
       id: 3,
       name: "Onkel Otto",
       dream: "ist es ins Stadion des Champions League Finales gehen",
-      freuden: "PUZZELN",
+      freuden: "puzzeln",
       color: "bg-ci-2"
     }
   ];
@@ -39,21 +39,31 @@
         <div class="w-1/3 p-2">
           <div class="primary omo-border overflow-hidden omo-shadow">
             <div
-              class="font-bold text-xl text-center p-2 text-gray-200 mb-2 {dream.color}
+              class="text-xl text-center p-4 text-gray-200 mb-2 {dream.color}
               flex flex-wrap justify-center content-center h-48">
               <p>"{dream.name}'s großer Lebenstraum ist {dream.dream}"</p>
             </div>
-            <!-- <div class="px-6 pt-4">
-              <p class="text-gray-800 text-bolt text-xl">{dream.name}</p>
-            </div> -->
-            <div class="px-6 pt-2 pb-4">
-              <p class="text-xs text-gray-500 uppercase mb-1">
-                Ich liebe es außerdem zu
-              </p>
+            <div class="px-6 pt-2 pb-2">
+              <p class="text-xs text-gray-500 mb-1 uppercase">Ich liebe es</p>
               <span
                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
-                font-semibold text-gray-700 mr-2">
-                {dream.freuden}
+                font-semibold text-gray-700 mr-2 mb-2">
+                #{dream.freuden}
+              </span>
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
+                font-semibold text-gray-700 mr-2 mb-2">
+                #freude 2
+              </span>
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
+                font-semibold text-gray-700 mr-2 mb-2">
+                #freude 3
+              </span>
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
+                font-semibold text-gray-700 mr-2 mb-2">
+                #freude 4
               </span>
             </div>
           </div>

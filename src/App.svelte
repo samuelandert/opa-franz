@@ -20,8 +20,9 @@
 
   <OmoDreams />
   <OmoCallToAction />
-  <OmoBlog />
   <OmoCities />
+  <OmoBlog />
+
   <!-- <OmoChat /> -->
 
 </div>

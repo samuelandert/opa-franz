@@ -33,7 +33,8 @@
               title={city.name}>
               <p
                 class="inline-block bg-ci rounded-full px-3 py-1 text-lg
-                font-semibold text-gray-100 mb-4">
+                font-semibold text-gray-100 mb-4 hover:bg-orange-300
+                hover:text-gray-800">
                 {city.name}
               </p>
             </div>

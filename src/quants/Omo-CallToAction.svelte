@@ -4,7 +4,7 @@
       <a
         href="#linktochat"
         class="hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
-        rounded-full px-6 py-3 text-3xl uppercase">
+        font-semibold rounded-full px-6 py-3 text-3xl">
         Jetzt Lebensträume erfüllen
       </a>
     </div>
