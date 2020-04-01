@@ -2,7 +2,7 @@
   <div class="w-5/6">
     <div class="flex justify-center">
       <a
-        href="#linktochat"
+        href="dreams"
         class="hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
         font-semibold rounded-full px-6 py-3 text-3xl">
         Jetzt Lebensträume erfüllen
