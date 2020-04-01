@@ -1,5 +1,5 @@
 <div class="flex justify-center">
-  <div class="w-5/6">
+  <div class="w-5/6 xl:w-4/6">
     <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
     <h2 class="text-center text-4xl text-ci mt-10 mb-6 uppercase">
       weil Träume uns am Leben erhalten
