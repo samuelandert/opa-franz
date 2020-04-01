@@ -1,6 +1,11 @@
 <script>
   let cities = [
     {
+      id: 0,
+      name: "Neue Stadt gründen",
+      image: "/images/addcity"
+    },
+    {
       id: 1,
       name: "Heidelberg",
       image: "https://source.unsplash.com/Yfo3qWK2pjY/250x250"
@@ -27,7 +32,7 @@
         <div class="w-1/4 p-2">
           <div class="primary omo-border overflow-hidden omo-shadow">
             <div
-              class="h-64 bg-cover overflow-hidden flex justify-center
+              class="h-64 bg-cover bg-center overflow-hidden flex justify-center
               content-end flex-wrap rounded-l-lg object-cover object-center"
               style="background-image: url('{city.image}.jpg')"
               title={city.name}>
@@ -44,26 +49,3 @@
     </div>
   </div>
 </div>
-<!-- 
-<img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
-<div class="w-full">
-  <div class="flex flex-wrap" />
-  {#each cities as city}
-    <div class="mt-6 w-1/3">
-      <div class="primary flex items-center omo-shadow omo-border">
-        <img
-          src={city.image}
-          class="h-32 w-32 flex-schrink-0 rounded-l-lg object-cover
-          object-center"
-          alt="image" />
-        <div
-          class="h-48 w-48 text-4xl text-gray-700 bg-cover overflow-hidden
-          flex-schrink-0 rounded-l-lg object-cover object-center"
-          style="background-image: url('/images/header.jpg')"
-          title={city.name}>
-          {city.name}
-        </div>
-      </div>
-    </div>
-  {/each}
-</div> -->

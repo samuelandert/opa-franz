@@ -8,6 +8,7 @@
   import OmoDreams from "./quants/Omo-Dreams.svelte";
   import OmoCallToAction from "./quants/Omo-CallToAction.svelte";
   import OmoChat from "./quants/Omo-Chat.svelte";
+  import OmoEnkel from "./quants/Omo-Enkel.svelte";
 </script>
 
 <div class="app overflow-y-scroll">
@@ -20,6 +21,7 @@
 
   <OmoDreams />
   <OmoCallToAction />
+  <OmoEnkel />
   <OmoCities />
   <OmoBlog />
 
