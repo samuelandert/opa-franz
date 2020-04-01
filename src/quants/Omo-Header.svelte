@@ -1,12 +1,5 @@
 <div class="flex justify-center">
   <div class="w-5/6">
-    <!-- <div
-    class="h-48 text-4xl text-gray-700 w-full flex content-center flex-wrap
-    bg-cover bg-top justify-center overflow-hidden"
-    style="background-image: url('/images/header.jpg')"
-    title="Woman holding a mug">
-    weil Träume uns am Leben erhalten
-  </div> -->
     <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
     <h2 class="text-center text-4xl text-ci mt-10 mb-6 uppercase">
       weil Träume uns am Leben erhalten

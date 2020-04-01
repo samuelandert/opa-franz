@@ -17,10 +17,11 @@
   </div>
 
   <OmoHeader />
-  <!-- <OmoCities /> -->
+
   <OmoDreams />
   <OmoCallToAction />
   <OmoBlog />
+  <OmoCities />
   <!-- <OmoChat /> -->
 
 </div>

@@ -44,7 +44,13 @@
               </h1>
               <p class="mt-2 text-gray-600">{article.excerpt}</p>
               <div class="mt-4">
-                <a href="#linktoitem" class="button">Weiterlesen</a>
+                <a
+                  href="#linktoblog"
+                  class="inline-block hover:bg-orange-300 hover:text-gray-800
+                  bg-ci text-gray-100 rounded-full px-3 py-1 text-lg
+                  font-semibold mb-4">
+                  Weiterlesen
+                </a>
               </div>
             </div>
           </div>
