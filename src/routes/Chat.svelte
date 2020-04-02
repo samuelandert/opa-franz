@@ -15,7 +15,7 @@ let chat = [
   "Cool, in Memmingen haben wir eine große Gemeinschaft und einen aktiven Blog, da findest du bestimmt schnell jemanden. Was sind den deine 3 größten Wünsche die du noch hast, oder bist du wunschlos glücklick?",
   "Danke Peter, jetzt haben wir schon fast alles, ich würde dich gerne registrieren. Wie möchtest du dich in Zukunft anmelden? 1-Ich kann dir eine Email senden 2-Über ein soziales Netzwerk 3-klassisch mit Passwort 4-Per SMS oder InstantMessenger",
   "Klasse! Damit ich dir eine Email senden kann brauche ich noch deine Email Adresse",
-  "Vielen Dank Peter, danke das du dich registriert hast. Um sicher zu stellen das du eine echte Person bist, wird sich Mitarbeiter diesen Chatverlauf ansehen und dich ggf. Noch einmal anschreiben. Bis dein Konto verifiziert ist kannst du dich gerne hier umsehen und"+
+  "Vielen Dank Peter, danke das du dich registriert hast. Um sicher zu stellen das du eine echte Person bist, wird sich Mitarbeiter diesen Chatverlauf ansehen und dich ggf. Noch einmal anschreiben. Bis dein Konto verifiziert ist kannst du dich gerne hier umsehen und",
   "zum Beispiel den Blog deiner Stadt lesen. Vielen Dank für das tolle Gespräch!"
 ];
   let div;
@@ -35,7 +35,6 @@ let chat = [
   let comments = [{ author: "eliza", text: chat[i++] }];
   function handleKeydown(event) {
     if (event.which === 13) {
-      debugger
       const text = event.target.value;
       if (!text) return;
 
@@ -92,7 +91,7 @@ let chat = [
 
   </div>
 </div>
-<footer class="w-full text-center border-t border-grey p-4">
+<footer class="w-full text-center border-t border-grey p-4 sticky bottom-0">
   <div class="flex flex-wrap -mx-3 justify-center">
     <div class="w-5/6 xl:w-4/6 px-3">
       <input
