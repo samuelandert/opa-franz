@@ -11,7 +11,12 @@
     <div
       class="w-full px-4 pt-1 pb-1 text-center hover:bg-orange-300
       hover:text-gray-800 bg-ci text-gray-100">
-      <a href="#linktoblog " class="text-lg font-semibold">{city.name}</a>
+      <a
+        href="#city"
+        class="text-lg font-semibold"
+        style="font-family: 'Indie Flower'!important;">
+        {city.name}
+      </a>
 
     </div>
     <!-- <div class="primary omo-border overflow-hidden omo-shadow">
