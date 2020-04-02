@@ -1,18 +1,33 @@
 const db = {
     wishes: [{
             id: "1",
-            title: "Wunsch 1",
+            title: "Wunsch",
             content: "Regelmäßig zusammen kochen und essen"
         },
         {
             id: "2",
-            title: "Wunsch 2",
+            title: "Wunsch",
             content: "Einmal die Woche Schachspielen"
         },
         {
             id: "3",
-            title: "Wunsch 3",
+            title: "Wunsch",
             content: "Öfters in die Natur spazieren gehen"
+        },
+        {
+            id: "4",
+            title: "Wunsch",
+            content: "Eine tolle Brieffreundschaft"
+        },
+        {
+            id: "5",
+            title: "Wunsch",
+            content: "mal wieder richtig zu lachen"
+        },
+        {
+            id: "6",
+            title: "Wunsch",
+            content: "das Schalke Deutscher Meister wird"
         }
     ],
     schwierigkeiten: [{
@@ -55,7 +70,24 @@ const db = {
         {
             id: "5",
             tag: "Schach spielen"
+        },
+        {
+            id: "6",
+            tag: "Internet"
+        },
+        {
+            id: "7",
+            tag: "Billiard"
+        },
+        {
+            id: "8",
+            tag: "tanzen"
+        },
+        {
+            id: "9",
+            tag: "reisen"
         }
+
     ],
     cities: [{
             id: 0,
@@ -84,7 +116,7 @@ const db = {
             image: "https://source.unsplash.com/rDEOVtE7vOs",
             story: "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabt",
             city: 2,
-            leidenschaften: [1],
+            leidenschaften: [1, 4, 7, 8, 9],
         },
         {
             id: 1,
@@ -92,7 +124,7 @@ const db = {
             image: "https://source.unsplash.com/7YVZYZeITc8",
             story: "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabtf",
             city: 1,
-            leidenschaften: [1, 2],
+            leidenschaften: [1, 2, 3, 4],
         },
         {
             id: 2,
@@ -100,7 +132,7 @@ const db = {
             image: "https://source.unsplash.com/rriAI0nhcbc",
             story: "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabt",
             city: 2,
-            leidenschaften: [1, 3],
+            leidenschaften: [1, 3, 5, 6, 9],
         },
         {
             id: 3,
@@ -115,9 +147,9 @@ const db = {
             id: 1,
             name: "Oma Erna",
             dream: "als ältester Mensch einen Marathon zu laufen",
-            leidenschaften: [1, 2, 3],
+            leidenschaften: [5, 4, 3],
             schwierigkeiten: [1, 2],
-            wishes: [1, 2, 3],
+            wishes: [1, 4, 6],
             color: "bg-ci-2",
             image: "https://source.unsplash.com/y0I85D5QKvs",
             city: 1
@@ -129,8 +161,8 @@ const db = {
             color: "bg-ci",
             city: 2,
             leidenschaften: [1, 2, 3],
-            schwierigkeiten: [1, 2],
-            wishes: [1, 2, 3],
+            schwierigkeiten: [3, 4, 5],
+            wishes: [2, 5, 3],
             image: "https://source.unsplash.com/MTg6nH8_lOY"
         },
 
@@ -140,9 +172,9 @@ const db = {
             dream: "ins Stadion des Champions League Finales gehen",
             color: "bg-ci-2",
             city: 3,
-            leidenschaften: [1, 2, 3],
-            schwierigkeiten: [1, 2],
-            wishes: [1, 2, 3],
+            leidenschaften: [1, 2, 3, 4, 7, 8, 9],
+            schwierigkeiten: [1, 2, 5],
+            wishes: [1, 4, 6],
             image: "https://source.unsplash.com/xSOfm3S2QQg"
         }
     ],
