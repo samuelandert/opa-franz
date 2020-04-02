@@ -15,6 +15,6 @@
 <OmoHeader {db} {currentId} />
 <OmoDreams {db} {currentId} />
 <!-- <OmoCallToAction {db} {currentId} /> -->
-<OmoEnkel {db} {currentId} />
+<OmoEnkels {db} {currentId} />
 <OmoCities {db} {currentId} />
 <OmoBlog {db} {currentId} />
