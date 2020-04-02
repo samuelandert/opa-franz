@@ -4,6 +4,7 @@ import City from './routes/City.svelte';
 import Events from './routes/Events.svelte';
 import Enkels from './routes/Enkels.svelte';
 import Chat from './routes/Chat.svelte';
+import Leidenschaft from './routes/Leidenschaft.svelte';
 import { writable } from 'svelte/store';
 const router = {
     '/': Home,
@@ -13,6 +14,7 @@ const router = {
     '/events': Events,
     '/enkels': Enkels,
     '/chat': Chat,
+    '/leidenschaft': Leidenschaft
 
 }
 export default router;

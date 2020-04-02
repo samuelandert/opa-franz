@@ -23,11 +23,11 @@
       <div class="px-6 pt-2">
         <p class="text-xs text-gray-500 mb-1 uppercase">Meine Leidenschaften</p>
         {#each leidenschaften as leidenschaft}
-          <span
+          <a href="leidenschaft?id={leidenschaft.id}"
             class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
             font-semibold text-gray-700 mr-2 mb-2">
-            #{leidenschaft}
-          </span>
+            #{leidenschaft.tag}
+          </a>
         {/each}
       </div>
       <div

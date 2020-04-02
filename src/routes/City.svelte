@@ -1,6 +1,8 @@
 <script>
   import OmoCity from "../quants/Omo-City.svelte";
   import OmoEnkels from "../quants/Omo-Enkels.svelte";
+  import OmoDreams from "../quants/Omo-Dreams.svelte";
+  import OmoBlog from "../quants/Omo-Blog.svelte";
   export let db;
   export let currentId;
   let city = db.cities.find(item => item.id == currentId);
@@ -17,17 +19,6 @@
   {city.name}
 </div>
 
-<OmoEnkels {enkels} />
-
-<br />
-<h2>Opas</h2>
-{#each dreams as dream}
-  <pre>{JSON.stringify(dream)}</pre>
-{/each}
-<br />
-
-<h2>Blog</h2>
-{#each blog as b}
-  <pre>{JSON.stringify(b)}</pre>
-{/each}
-<br />
+<OmoEnkels {enkels} {db} />
+<OmoDreams {dreams} {db} />
+<OmoBlog {blog} {db} />
