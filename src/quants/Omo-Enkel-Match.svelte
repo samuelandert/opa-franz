@@ -1,5 +1,7 @@
 <script>
   export let enkel;
+  export let db;
+  let leidenschaften = db.leidenschaften.filter(x=>enkel.leidenschaften.some(y=>x.id == y));
 </script>
 
 <div class="w-1/3 p-2">
@@ -9,7 +11,7 @@
         src={enkel.image}
         class="primary h-64 w-full rounded-t-lg object-cover object-center"
         alt="image" />
-      <!-- <div class="px-6 pt-2">
+      <div class="px-6 pt-2">
         <p class="text-xs text-gray-500 mb-1 uppercase">Meine Leidenschaften</p>
         {#each leidenschaften as leidenschaft}
           <a
@@ -19,7 +21,7 @@
             #{leidenschaft.tag}
           </a>
         {/each}
-      </div> -->
+      </div>
     </div>
   </a>
 </div>

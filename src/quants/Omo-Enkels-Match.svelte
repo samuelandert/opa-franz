@@ -15,7 +15,7 @@
     </h2>
     <div class="flex content-start flex-wrap">
       {#each enkels as enkel}
-        <OmoEnkel {enkel} />
+        <OmoEnkel {enkel} {db} />
       {/each}
     </div>
   </div>
