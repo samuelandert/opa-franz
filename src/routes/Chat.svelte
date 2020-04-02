@@ -74,7 +74,7 @@
   }
 </style>
 
-<div class="flex flex-1 justify-center">
+<div class="flex flex-1 justify-center " style="height:calc('100%-100px')">
   <div class="w-5/6 xl:w-4/6">
     <h2
       class="text-center text-5xl text-ci mt-10 mb-6"
