@@ -18,7 +18,7 @@
 </div>
 
 {#each db.leidenschaften as leidenschaft}
-        {leidenschaft.tag}
+       <a href="leidenschaft?id={leidenschaft.id}">{leidenschaft.tag}</a>
       {/each}
 
 
