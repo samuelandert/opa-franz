@@ -3,6 +3,7 @@ import Dream from './routes/Dream.svelte';
 import City from './routes/City.svelte';
 import Events from './routes/Events.svelte';
 import Enkels from './routes/Enkels.svelte';
+import Chat from './routes/Chat.svelte';
 import { writable } from 'svelte/store';
 const router = {
     '/': Home,
@@ -10,7 +11,9 @@ const router = {
     '/dream': Dream,
     '/cities': City,
     '/events': Events,
-    '/enkels': Enkels
+    '/enkels': Enkels,
+    '/chat': Chat,
+
 }
 export default router;
 export const curRoute = writable('/home');
