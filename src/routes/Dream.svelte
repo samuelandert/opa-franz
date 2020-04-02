@@ -1,72 +1,18 @@
 <script>
+  import OmoWish from '../quants/Omo-Wish.svelte';
   export let db;
-  const wishes = [
-    {
-      id: "1",
-      title: "Wunsch 1",
-      content: "Regelmäßig zusammen kochen und essen"
-    },
-    {
-      id: "2",
-      title: "Wunsch 2",
-      content: "Einmal die Woche Schachspielen"
-    },
-    {
-      id: "3",
-      title: "Wunsch 3",
-      content: "Öfters in die Natur spazieren gehen"
-    }
-  ];
-  const leidenschaften = [
-    {
-      id: "1",
-      tag: "stricken"
-    },
-    {
-      id: "2",
-      tag: "fischen"
-    },
-    {
-      id: "3",
-      tag: "kochen"
-    },
-    {
-      id: "4",
-      tag: "backen"
-    },
-    {
-      id: "5",
-      tag: "Schach spielen"
-    }
-  ];
-  const schwierigkeiten = [
-    {
-      id: "1",
-      tag: "hören"
-    },
-    {
-      id: "2",
-      tag: "sehen"
-    },
-    {
-      id: "3",
-      tag: "laufen"
-    },
-    {
-      id: "4",
-      tag: "essen"
-    },
-    {
-      id: "5",
-      tag: "reden"
-    }
-  ];
+  export let dream;
+  export let currentId;
+  if(!dream) dream = db.dreams.find(x=>x.id == currentId);
+  let wishes = db.wishes.filter(w=>dream.wishes.some(dw => w.id)); 
+  let leidenschaften = db.leidenschaften.filter(ls=>dream.leidenschaften.some(x=>x ==ls.id));
+  let schwierigkeiten = db.schwierigkeiten.filter(ls=>dream.schwierigkeiten.some(x=>x ==ls.id));
 </script>
 
 <div
   class="text-4xl text-center p-4 text-gray-200 bg-ci-2 flex flex-wrap
   justify-center content-center h-64">
-  <p>"Opa Josef's großer Lebenstraum ist xyz......."</p>
+  <p>"{dream.name}'s großer Lebenstraum ist es {dream.dream}"</p>
 </div>
 <div class="flex justify-center my-10">
   <div class="w-5/6 xl:w-4/6">
@@ -77,24 +23,7 @@
     </div>
     <div class="flex content-start flex-wrap">
       {#each wishes as wish}
-        <div class="w-1/3 p-2">
-          <div
-            class="flex flex-col bg-white px-8 py-6 max-w-sm mx-auto rounded-lg
-            shadow-lg">
-            <div class="flex justify-center items-center">
-              <a
-                class="p-3 py-1 bg-gray-600 text-sm text-green-100 rounded-full"
-                href="#">
-                {wish.title}
-              </a>
-            </div>
-            <div class="mt-4 text-center">
-              <a class="text-lg text-gray-700 font-medium " href="#">
-                {wish.content}
-              </a>
-            </div>
-          </div>
-        </div>
+        <OmoWish {wish}/>
       {/each}
     </div>
 
