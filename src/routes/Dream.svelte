@@ -17,15 +17,33 @@
 </script>
 
 <div
-  class="text-4xl text-center p-4 text-gray-200 bg-ci-2 flex flex-wrap
-  justify-center content-center h-64">
+  class="py-64 text-4xl text-gray-700 w-full flex content-center flex-wrap
+  bg-cover bg-center justify-center overflow-hidden"
+  style="background-image: url('{dream.image}')"
+  title="Woman holding a mug" />
+<div
+  class="text-4xl text-center px-4 py-16 text-gray-200 bg-ci-2 flex flex-wrap
+  justify-center content-center">
   <p style="font-family: 'Indie Flower'!important;">
     "{dream.name}'s großer Lebenstraum ist es {dream.dream}"
   </p>
 </div>
 <div class="flex justify-center my-10">
-  <OmoCity {city} {db} />
+  <div class="w-5/6 xl:w-4/6">
+    <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
+    <h2
+      class="text-center text-5xl text-ci mt-10 mb-6"
+      style="font-family: 'Indie Flower'!important;">
+      Meine schöne Heimatstadt
+    </h2>
+    <div class="flex justify-center">
+      <OmoCity {city} {db} />
+    </div>
+  </div>
 </div>
+<!-- <div class="flex justify-center my-10">
+  <OmoCity {city} {db} />
+</div> -->
 <div class="flex justify-center my-10">
   <div class="w-5/6 xl:w-4/6">
     <OmoWishes {wishes} />

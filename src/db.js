@@ -65,7 +65,7 @@ const db = {
         {
             id: 2,
             name: "Berlin",
-            image: "https://source.unsplash.com/pN684G33h_M"
+            image: "https://source.unsplash.com/TK5I5L5JGxY"
         },
         {
             id: 3,
