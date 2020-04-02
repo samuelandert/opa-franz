@@ -6,8 +6,8 @@
   export let currentId;
   if (!leidenschaft)
     leidenschaft = db.leidenschaften.find(x => x.id == currentId);
-  let dreams = db.dreams.filter(x => db.leidenschaften.some(y => (y.id = x)));
-  let enkels = db.enkels.filter(x => db.leidenschaften.some(y => (y.id = x)));
+  let dreams = db.dreams.filter(x => x.leidenschaften.some(y=> y == leidenschaft.id));
+  let enkels = db.enkels.filter(x => x.leidenschaften.some(y => y == leidenschaft.id));
 </script>
 
 <div
