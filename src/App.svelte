@@ -1,12 +1,17 @@
 <script>
-import router, { curRoute } from './router.js';
-import RouterLink from './RouterLink.svelte';
+import router, { curRoute, curId } from './router.js';
 import OmoNavbar from "./quants/Omo-Navbar.svelte";
 import { onMount } from 'svelte';
 
+let currentId;
+
 onMount(() => {
   curRoute.set(window.location.pathname);
-  if (!history.state) {
+  var urlParams = new URLSearchParams(window.location.search);
+  if(urlParams.has("id")){
+        curId.set(urlParams.get("id"));
+        currentId = urlParams.get("id");
+ } if (!history.state) {
     window.history.replaceState({path: window.location.pathname}, '',   window.location.href)
   }
 })
@@ -116,11 +121,9 @@ const db = {
 </style>
 
 <svelte:window on:popstate={handlerBackNavigation} />
-
-
 <div id="pageContent" class="app overflow-y-scroll">
   <div class="sticky top-0" style="z-index:100000">
     <OmoNavbar />
   </div>
-  <svelte:component this={router[$curRoute]} {db} />
+  <svelte:component this={router[$curRoute]} {db} {currentId} />
 </div>
