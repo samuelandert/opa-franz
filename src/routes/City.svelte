@@ -9,15 +9,15 @@
   let blog = db.blog.filter(item => item.cities.some(id => id == city.id));
 </script>
 
-<h1>{city.name}</h1>
-<br />
-<br />
-<h2>Enkels</h2>
-{#each enkels as enkel}
-  <pre>{JSON.stringify(enkel)}</pre>
-  <a href="enkels?id={enkel.id}">LINK {enkel.name}</a>
-{/each}
-<OmoEnkels {enkels}/>
+<div
+  class="h-64 text-5xl w-full flex content-center flex-wrap bg-cover bg-center
+  justify-center overflow-hidden uppercase font-bolt text-white"
+  style="background-image: url('{city.image}')"
+  title={city.name}>
+  {city.name}
+</div>
+
+<OmoEnkels {enkels} />
 
 <br />
 <h2>Opas</h2>

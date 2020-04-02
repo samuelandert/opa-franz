@@ -16,6 +16,10 @@
       {#each dreams as dream}
         <div class="w-1/3 p-2">
           <div class="primary omo-border overflow-hidden omo-shadow">
+            <img
+              src={dream.image}
+              class="primary h-64 w-full rounded-t-lg object-cover object-center"
+              alt="image" />
             <div
               class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex
               flex-wrap justify-center content-center h-48">
