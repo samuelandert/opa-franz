@@ -1,9 +1,15 @@
-<div class="flex justify-center my-20">
+<div class="flex justify-center my-12">
   <div class="w-5/6 xl:w-4/6">
     <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
-    <h2 class="text-center text-5xl text-ci mt-10 mb-6">UNSERE TRÄUME</h2>
-    <div class="text-2xl text-gray-600 text-center mb-16">
-      <p>"In 3 Schritten kannst du alles ändern"</p>
+    <h2
+      class="text-center text-6xl text-ci mt-10 mb-6"
+      style="font-family: 'Indie Flower'!important;">
+      #KEINSAMKEIT
+    </h2>
+    <div
+      class="text-2xl text-gray-600 text-center mb-16"
+      style="font-family: 'Indie Flower'!important;">
+      <p>"In 3 Schritten zu mehr Zweisamkeit"</p>
     </div>
 
     <div class="flex content-start flex-wrap">
@@ -15,10 +21,10 @@
               class="primary h-64 w-full rounded-t-lg object-cover object-center"
               alt="image" />
             <div
-              class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex
-              flex-wrap justify-center content-center h-48">
-              <p>
-                Chatte mit Robin und erfasse deine Daten ohne nerviges Formular
+              class="text-2xl text-center p-6 text-ci-2 mb-2 flex flex-wrap
+              justify-center content-center h-48">
+              <p style="font-family: 'Indie Flower'!important;">
+                1. Chatte mit unserem Verkuppler Robin
               </p>
             </div>
           </div>
@@ -33,9 +39,11 @@
               class="primary h-64 w-full rounded-t-lg object-cover object-center"
               alt="image" />
             <div
-              class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex
-              flex-wrap justify-center content-center h-48">
-              <p>Finde deinen nächsten Gesprächspartner</p>
+              class="text-2xl text-center p-6 text-ci-2 mb-2 flex flex-wrap
+              justify-center content-center h-48">
+              <p style="font-family: 'Indie Flower'!important;">
+                2. Robin hilft dir bei deinem Tandem Match
+              </p>
             </div>
           </div>
         </a>
@@ -48,9 +56,11 @@
               class="primary h-64 w-full rounded-t-lg object-cover object-center"
               alt="image" />
             <div
-              class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex
-              flex-wrap justify-center content-center h-48">
-              <p>Habt eine Menge Spaß zusammen!</p>
+              class="text-2xl text-center p-6 text-ci-2 mb-2 flex flex-wrap
+              justify-center content-center h-48">
+              <p style="font-family: 'Indie Flower'!important;">
+                3. Genießt die gemeinsame Zeit
+              </p>
             </div>
           </div>
         </a>
