@@ -17,7 +17,6 @@
   const eliza = new Eliza();
 
   let comments = [{ author: "eliza", text: eliza.getInitial() }];
-
   function handleKeydown(event) {
     if (event.which === 13) {
       const text = event.target.value;
