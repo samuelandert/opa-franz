@@ -1,5 +1,5 @@
 <script>
- export let db;
+  export let db;
   let dreams = db.dreams;
 </script>
 
@@ -17,8 +17,8 @@
         <div class="w-1/3 p-2">
           <div class="primary omo-border overflow-hidden omo-shadow">
             <div
-              class="text-xl text-center p-4 text-gray-200 mb-2 {dream.color}
-              flex flex-wrap justify-center content-center h-48">
+              class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex
+              flex-wrap justify-center content-center h-48">
               <p>"{dream.name}'s großer Lebenstraum ist {dream.dream}"</p>
             </div>
             <div class="px-6 pt-2 pb-2">
