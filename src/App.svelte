@@ -208,7 +208,7 @@
 </style>
 
 <svelte:window on:popstate={handlerBackNavigation} />
-<div id="pageContent" class="app overflow-y-scroll">
+<div id="pageContent" class="app flex flex-col overflow-y-scroll">
   <div class="sticky top-0" style="z-index:100000">
     <OmoNavbar />
   </div>
