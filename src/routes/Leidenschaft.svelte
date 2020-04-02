@@ -8,6 +8,7 @@
     leidenschaft = db.leidenschaften.find(x => x.id == currentId);
   let dreams = db.dreams.filter(x => x.leidenschaften.some(y=> y == leidenschaft.id));
   let enkels = db.enkels.filter(x => x.leidenschaften.some(y => y == leidenschaft.id));
+
 </script>
 
 <div
@@ -15,5 +16,11 @@
   justify-center content-center">
   <p style="font-family: 'Indie Flower'!important;">{leidenschaft.tag}</p>
 </div>
+
+{#each db.leidenschaften as leidenschaft}
+        {leidenschaft.tag}
+      {/each}
+
+
 <OmoDreams {dreams} {db} />
 <OmoEnkels {enkels} {db} />
