@@ -36,10 +36,7 @@
       <div
         class="mt-4 w-full px-4 pt-1 pb-1 text-center hover:bg-orange-300
         hover:text-gray-800 bg-ci text-gray-100">
-        <a
-          href="#linktoblog "
-          class="text-lg font-semibold"
-          style="font-family: 'Indie Flower'!important;">
+        <a href="dream?id={dream.id} " class="text-lg font-semibold">
           näher kennenlernen
         </a>
       </div>
