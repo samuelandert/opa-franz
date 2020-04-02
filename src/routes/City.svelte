@@ -12,13 +12,13 @@
 </script>
 
 <div
-  class="h-64 text-5xl w-full flex content-center flex-wrap bg-cover bg-center
+  class="py-64 text-6xl w-full flex content-center flex-wrap bg-cover bg-center
   justify-center overflow-hidden uppercase font-bolt text-white"
   style="background-image: url('{city.image}')"
   title={city.name}>
   {city.name}
 </div>
 
-<OmoEnkels {enkels} {db} />
 <OmoDreams {dreams} {db} />
+<OmoEnkels {enkels} {db} />
 <OmoBlog {blog} {db} />

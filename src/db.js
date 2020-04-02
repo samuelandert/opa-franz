@@ -90,11 +90,6 @@ const db = {
 
     ],
     cities: [{
-            id: 0,
-            name: "Neue Stadt gründen",
-            image: "/images/addcity.jpg"
-        },
-        {
             id: 1,
             name: "Heidelberg",
             image: "https://source.unsplash.com/Yfo3qWK2pjY"
@@ -102,13 +97,18 @@ const db = {
         {
             id: 2,
             name: "Berlin",
-            image: "https://source.unsplash.com/pN684G33h_M"
+            image: "https://source.unsplash.com/TK5I5L5JGxY"
         },
         {
             id: 3,
             name: "Memmingen",
             image: "https://upload.wikimedia.org/wikipedia/commons/2/22/Memmingen-Marktplatz.JPG"
-        }
+        },
+        {
+            id: 4,
+            name: "Neue Stadt gründen",
+            image: "/images/addcity.jpg"
+        },
     ],
     enkels: [{
             id: 0,

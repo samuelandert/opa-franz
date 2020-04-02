@@ -11,8 +11,8 @@
         src="{enkel.image}/500x500"
         alt="{enkel.image}/500x500" />
       <div class="px-6 py-4">
-        <h3 class="text-lg text-center font-semibold text-gray-800 mb-2">
-          {enkel.name}
+        <h3 class="text-2xl text-center font-semibold text-gray-800 mb-2">
+          <p style="font-family: 'Indie Flower'!important;">{enkel.name}</p>
         </h3>
         <p class="text-gray-600 text-center ">"{enkel.story}"</p>
         <!-- <div class="mt-2">

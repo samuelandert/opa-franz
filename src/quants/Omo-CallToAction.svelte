@@ -4,7 +4,8 @@
       <a
         href="dreams"
         class="hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
-        font-semibold rounded-full px-6 py-3 text-3xl">
+        font-semibold rounded-full px-6 py-3 text-3xl"
+        style="font-family: 'Indie Flower'!important;">
         Jetzt Lebensträume erfüllen
       </a>
     </div>

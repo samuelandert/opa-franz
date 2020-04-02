@@ -1,31 +1,52 @@
 <script>
-  import OmoWishes from '../quants/Omo-Wishes.svelte';
-  import OmoCity from '../quants/Omo-City.svelte';
-  import OmoLeidenschaften from '../quants/OmoLeidenschaften.svelte';
+  import OmoWishes from "../quants/Omo-Wishes.svelte";
+  import OmoCity from "../quants/Omo-City.svelte";
+  import OmoLeidenschaften from "../quants/OmoLeidenschaften.svelte";
   export let db;
   export let dream;
   export let currentId;
-  if(!dream) dream = db.dreams.find(x=>x.id == currentId);
-  let wishes = db.wishes.filter(w=>dream.wishes.some(dw => w.id)); 
-  let leidenschaften = db.leidenschaften.filter(ls=>dream.leidenschaften.some(x=>x ==ls.id));
-  let schwierigkeiten = db.schwierigkeiten.filter(ls=>dream.schwierigkeiten.some(x=>x ==ls.id));
-  let city = db.cities.find(x=>x.id == dream.city);
+  if (!dream) dream = db.dreams.find(x => x.id == currentId);
+  let wishes = db.wishes.filter(w => dream.wishes.some(dw => w.id));
+  let leidenschaften = db.leidenschaften.filter(ls =>
+    dream.leidenschaften.some(x => x == ls.id)
+  );
+  let schwierigkeiten = db.schwierigkeiten.filter(ls =>
+    dream.schwierigkeiten.some(x => x == ls.id)
+  );
+  let city = db.cities.find(x => x.id == dream.city);
 </script>
 
 <div
-  class="text-4xl text-center p-4 text-gray-200 bg-ci-2 flex flex-wrap
-  justify-center content-center h-64">
-  <p>"{dream.name}'s großer Lebenstraum ist es {dream.dream}"</p>
-</div>
-<div class="flex justify-center my-10">
-<OmoCity {city} {db}></OmoCity>
+  class="py-64 text-4xl text-gray-700 w-full flex content-center flex-wrap
+  bg-cover bg-center justify-center overflow-hidden"
+  style="background-image: url('{dream.image}')"
+  title="dream" />
+<div
+  class="text-4xl text-center px-4 py-16 text-gray-200 bg-ci-2 flex flex-wrap
+  justify-center content-center">
+  <p style="font-family: 'Indie Flower'!important;">
+    "{dream.name}'s großer Lebenstraum ist es {dream.dream}"
+  </p>
 </div>
 <div class="flex justify-center my-10">
   <div class="w-5/6 xl:w-4/6">
-    <OmoWishes {wishes}/>
+    <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
+    <h2
+      class="text-center text-5xl text-ci mt-10 mb-6"
+      style="font-family: 'Indie Flower'!important;">
+      Meine schöne Heimatstadt
+    </h2>
+    <div class="flex justify-center">
+      <OmoCity {city} {db} />
+    </div>
+  </div>
+</div>
+<div class="flex justify-center my-10">
+  <div class="w-5/6 xl:w-4/6">
+    <OmoWishes {wishes} />
 
     <div class="flex content-start flex-wrap">
-      <OmoLeidenschaften {leidenschaften}/>
+      <OmoLeidenschaften {leidenschaften} />
       <div class="w-1/2 p-2">
         <div class="flex flex-col bg-white px-8 py-6 rounded-lg shadow-lg">
           <div class="flex justify-center items-center">
