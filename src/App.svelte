@@ -91,7 +91,7 @@
       {
         id: 0,
         name: "Neue Stadt gründen",
-        image: "/images/addcity"
+        image: "/images/addcity.jpg"
       },
       {
         id: 1,
