@@ -26,6 +26,67 @@
   }
 
   const db = {
+    wishes: [
+      {
+        id: "1",
+        title: "Wunsch 1",
+        content: "Regelmäßig zusammen kochen und essen"
+      },
+      {
+        id: "2",
+        title: "Wunsch 2",
+        content: "Einmal die Woche Schachspielen"
+      },
+      {
+        id: "3",
+        title: "Wunsch 3",
+        content: "Öfters in die Natur spazieren gehen"
+      }
+    ],
+    schwierigkeiten: [
+      {
+        id: "1",
+        tag: "hören"
+      },
+      {
+        id: "2",
+        tag: "sehen"
+      },
+      {
+        id: "3",
+        tag: "laufen"
+      },
+      {
+        id: "4",
+        tag: "essen"
+      },
+      {
+        id: "5",
+        tag: "reden"
+      }
+    ],
+    leidenschaften: [
+      {
+        id: "1",
+        tag: "stricken"
+      },
+      {
+        id: "2",
+        tag: "fischen"
+      },
+      {
+        id: "3",
+        tag: "kochen"
+      },
+      {
+        id: "4",
+        tag: "backen"
+      },
+      {
+        id: "5",
+        tag: "Schach spielen"
+      }
+    ],
     cities: [
       {
         id: 0,
@@ -86,9 +147,11 @@
     dreams: [
       {
         id: 1,
-        name: "Oma Elsa",
-        dream: "ist es als ältester Mensch einen Marathon zu laufen",
-        freuden: "spielen",
+        name: "Oma Erna",
+        dream: "als ältester Mensch einen Marathon zu laufen",
+        leidenschaften: [1, 2, 3],
+        schwierigkeiten: [1, 2],
+        wishes: [1, 2, 3],
         color: "bg-ci-2",
         image: "https://source.unsplash.com/y0I85D5QKvs",
         city: 1
@@ -96,21 +159,25 @@
       {
         id: 2,
         name: "Tante Inge",
-        dream: "es noch einmal an die Nordsee zu fahren",
-        freuden: "spazieren",
+        dream: "noch einmal an die Nordsee zu fahren",
         color: "bg-ci",
-        image: "https://source.unsplash.com/MTg6nH8_lOY",
-        city: 2
+        city: 2,
+        leidenschaften: [1, 2, 3],
+        schwierigkeiten: [1, 2],
+        wishes: [1, 2, 3],
+        image: "https://source.unsplash.com/MTg6nH8_lOY"
       },
 
       {
         id: 3,
         name: "Onkel Otto",
-        dream: "ist es ins Stadion des Champions League Finales gehen",
-        freuden: "puzzeln",
+        dream: "ins Stadion des Champions League Finales gehen",
         color: "bg-ci-2",
-        image: "https://source.unsplash.com/xSOfm3S2QQg",
-        city: 3
+        city: 3,
+        leidenschaften: [1, 2, 3],
+        schwierigkeiten: [1, 2],
+        wishes: [1, 2, 3],
+        image: "https://source.unsplash.com/xSOfm3S2QQg"
       }
     ],
     blog: [
