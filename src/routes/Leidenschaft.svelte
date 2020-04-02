@@ -1,14 +1,19 @@
 <script>
-  import OmoDreams from '../quants/Omo-Dreams.svelte';
-  import OmoEnkels from '../quants/Omo-Enkels.svelte';
+  import OmoDreams from "../quants/Omo-Dreams.svelte";
+  import OmoEnkels from "../quants/Omo-Enkels-Match.svelte";
   export let db;
   export let leidenschaft;
   export let currentId;
-  if(!leidenschaft) leidenschaft = db.leidenschaften.find(x=>x.id == currentId);
-  let dreams = db.dreams.filter(x=>db.leidenschaften.some(y => y.id = x)); 
-  let enkels = db.enkels.filter(x=>db.leidenschaften.some(y => y.id = x)); 
+  if (!leidenschaft)
+    leidenschaft = db.leidenschaften.find(x => x.id == currentId);
+  let dreams = db.dreams.filter(x => db.leidenschaften.some(y => (y.id = x)));
+  let enkels = db.enkels.filter(x => db.leidenschaften.some(y => (y.id = x)));
 </script>
 
-<h1>{leidenschaft.tag}</h1>
-<OmoDreams {dreams} {db}/>
-<OmoEnkels {enkels} {db}/>
+<div
+  class="text-4xl text-center px-4 py-16 text-gray-200 bg-ci-2 flex flex-wrap
+  justify-center content-center">
+  <p style="font-family: 'Indie Flower'!important;">{leidenschaft.tag}</p>
+</div>
+<OmoDreams {dreams} {db} />
+<OmoEnkels {enkels} {db} />

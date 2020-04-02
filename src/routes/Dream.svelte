@@ -20,7 +20,7 @@
   class="py-64 text-4xl text-gray-700 w-full flex content-center flex-wrap
   bg-cover bg-center justify-center overflow-hidden"
   style="background-image: url('{dream.image}')"
-  title="Woman holding a mug" />
+  title="dream" />
 <div
   class="text-4xl text-center px-4 py-16 text-gray-200 bg-ci-2 flex flex-wrap
   justify-center content-center">
@@ -41,9 +41,6 @@
     </div>
   </div>
 </div>
-<!-- <div class="flex justify-center my-10">
-  <OmoCity {city} {db} />
-</div> -->
 <div class="flex justify-center my-10">
   <div class="w-5/6 xl:w-4/6">
     <OmoWishes {wishes} />

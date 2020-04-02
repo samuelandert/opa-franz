@@ -105,7 +105,8 @@
 
   </div>
 </div>
-<footer class="w-full text-center border-t border-grey p-4 sticky bottom-0">
+<footer
+  class="w-full text-center border-t border-grey bg-gray-300 p-4 sticky bottom-0">
   <div class="flex flex-wrap -mx-3 justify-center">
     <div class="w-5/6 xl:w-4/6 px-3">
       <input
