@@ -1,5 +1,6 @@
 <script>
   import OmoWishes from '../quants/Omo-Wishes.svelte';
+  import OmoCity from '../quants/Omo-City.svelte';
   import OmoLeidenschaften from '../quants/OmoLeidenschaften.svelte';
   export let db;
   export let dream;
@@ -8,12 +9,16 @@
   let wishes = db.wishes.filter(w=>dream.wishes.some(dw => w.id)); 
   let leidenschaften = db.leidenschaften.filter(ls=>dream.leidenschaften.some(x=>x ==ls.id));
   let schwierigkeiten = db.schwierigkeiten.filter(ls=>dream.schwierigkeiten.some(x=>x ==ls.id));
+  let city = db.cities.find(x=>x.id == dream.city);
 </script>
 
 <div
   class="text-4xl text-center p-4 text-gray-200 bg-ci-2 flex flex-wrap
   justify-center content-center h-64">
   <p>"{dream.name}'s großer Lebenstraum ist es {dream.dream}"</p>
+</div>
+<div class="flex justify-center my-10">
+<OmoCity {city} {db}></OmoCity>
 </div>
 <div class="flex justify-center my-10">
   <div class="w-5/6 xl:w-4/6">
