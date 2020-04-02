@@ -4,7 +4,7 @@
     <div class="md:items-center md:w-auto flex">
       <div class="flex text-sm" v-else>
         <a
-          href="dreams"
+          href="chat"
           class=" hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
           rounded-full px-3 py-1 text-lg font-semibold">
           Jetzt Lebensträume erfüllen

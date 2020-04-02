@@ -17,6 +17,7 @@
     "tailwindcss-responsive-embed": "^1.0.0"
   },
   "dependencies": {
+    "elizabot": "0.0.2",
     "sirv-cli": "^0.4.4"
   },
   "scripts": {
