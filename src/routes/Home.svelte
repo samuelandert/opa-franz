@@ -11,9 +11,10 @@
   import OmoChat from "../quants/Omo-Chat.svelte";
   import OmoEnkel from "../quants/Omo-Enkel.svelte";
 </script>
-  <OmoHeader {db} {currentId} />
-  <OmoDreams {db}  {currentId}/>
-  <OmoCallToAction {db}  {currentId}/>
-  <OmoEnkel {db}  {currentId}/>
-  <OmoCities {db}  {currentId}/>
-  <OmoBlog {db}  {currentId} />
+
+<OmoHeader {db} {currentId} />
+<OmoDreams {db} {currentId} />
+<!-- <OmoCallToAction {db} {currentId} /> -->
+<OmoEnkel {db} {currentId} />
+<OmoCities {db} {currentId} />
+<OmoBlog {db} {currentId} />
