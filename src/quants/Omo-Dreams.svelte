@@ -1,28 +1,6 @@
 <script>
-  let dreams = [
-    {
-      id: 1,
-      name: "Opa Jakob",
-      dream: "ist es als ältester Mensch einen Marathon zu laufen",
-      freuden: "spielen",
-      color: "bg-ci-2"
-    },
-    {
-      id: 2,
-      name: "Tante Inge",
-      dream: "es noch einmal an die Nordsee zu fahren",
-      freuden: "spazieren",
-      color: "bg-ci"
-    },
-
-    {
-      id: 3,
-      name: "Onkel Otto",
-      dream: "ist es ins Stadion des Champions League Finales gehen",
-      freuden: "puzzeln",
-      color: "bg-ci-2"
-    }
-  ];
+ export let db;
+  let dreams = db.dreams;
 </script>
 
 <div class="flex justify-center my-20">

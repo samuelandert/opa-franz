@@ -1,21 +1,6 @@
 <script>
-  let cities = [
-    {
-      id: 0,
-      name: "Neue Stadt gründen",
-      image: "/images/addcity"
-    },
-    {
-      id: 1,
-      name: "Heidelberg",
-      image: "https://source.unsplash.com/Yfo3qWK2pjY/250x250"
-    },
-    {
-      id: 2,
-      name: "Berlin",
-      image: "https://source.unsplash.com/pN684G33h_M/250x250"
-    }
-  ];
+	export let db;
+  let cities = db.cities;
 </script>
 
 <div class="flex justify-center my-20">

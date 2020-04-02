@@ -1,38 +1,6 @@
 <script>
-  let enkels = [
-    {
-      id: 0,
-      name: "Emma",
-      image: "https://source.unsplash.com/rDEOVtE7vOs/500x500",
-      story:
-        "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabt",
-      city: "Berlin"
-    },
-    {
-      id: 1,
-      name: "Jakob",
-      image: "https://source.unsplash.com/7YVZYZeITc8/500x500",
-      story:
-        "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabtf",
-      city: "Heidelberg"
-    },
-    {
-      id: 2,
-      name: "Volker",
-      image: "https://source.unsplash.com/rriAI0nhcbc/500x500",
-      story:
-        "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabt",
-      city: "Berlin"
-    },
-    {
-      id: 3,
-      name: "Adele",
-      image: "https://source.unsplash.com/xe68QiMaDrQ/500x500",
-      story:
-        "Eines der schönsten Momente meines Lebens habe ich mit Onkel Josef-Dieter gehabt",
-      city: "Memmingen"
-    }
-  ];
+	export let db;
+  let enkels = db.enkels;
 </script>
 
 <div class="flex justify-center my-20">

@@ -1,3 +1,7 @@
+<script>
+	export let db;
+</script>
+
 <div class="flex justify-center">
   <div class="w-5/6 xl:w-4/6">
     <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />

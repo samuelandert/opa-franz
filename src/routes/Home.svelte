@@ -1,4 +1,5 @@
 <script>
+	export let db;
   //import OmoThemeDark from "./design/Omo-Theme-Dark.svelte";
   import OmoThemeLight from "../design/Omo-Theme-Light.svelte";
   import OmoBlog from "../quants/Omo-Blog.svelte";
@@ -9,16 +10,9 @@
   import OmoChat from "../quants/Omo-Chat.svelte";
   import OmoEnkel from "../quants/Omo-Enkel.svelte";
 </script>
-
-
- 
-
-  <OmoHeader />
-
-  <OmoDreams />
-  <OmoCallToAction />
-  <OmoEnkel />
-  <OmoCities />
-  <OmoBlog />
-
-  <!-- <OmoChat /> -->
+  <OmoHeader {db}  />
+  <OmoDreams {db} />
+  <OmoCallToAction {db} />
+  <OmoEnkel {db} />
+  <OmoCities {db} />
+  <OmoBlog {db}  />
