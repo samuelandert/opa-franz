@@ -1,5 +1,5 @@
 <script>
- export let db;
+  export let db;
   let dreams = db.dreams;
 </script>
 
@@ -17,12 +17,14 @@
         <div class="w-1/3 p-2">
           <div class="primary omo-border overflow-hidden omo-shadow">
             <div
-              class="text-xl text-center p-4 text-gray-200 mb-2 {dream.color}
-              flex flex-wrap justify-center content-center h-48">
+              class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex
+              flex-wrap justify-center content-center h-48">
               <p>"{dream.name}'s großer Lebenstraum ist {dream.dream}"</p>
             </div>
-            <div class="px-6 pt-2 pb-2">
-              <p class="text-xs text-gray-500 mb-1 uppercase">Ich liebe es</p>
+            <div class="px-6 pt-2">
+              <p class="text-xs text-gray-500 mb-1 uppercase">
+                Meine Leidenschaften
+              </p>
               <span
                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
                 font-semibold text-gray-700 mr-2 mb-2">
@@ -44,9 +46,19 @@
                 #freude 4
               </span>
             </div>
+            <div
+              class="mt-4 w-full px-4 pt-1 pb-1 text-center hover:bg-orange-300
+              hover:text-gray-800 bg-ci text-gray-100">
+              <a href="#linktoblog " class="text-lg font-semibold">
+                näher kennenlernen
+              </a>
+            </div>
           </div>
+
         </div>
       {/each}
+
     </div>
+
   </div>
 </div>
