@@ -1,5 +1,6 @@
 <script>
-  import OmoWish from '../quants/Omo-Wish.svelte';
+  import OmoWishes from '../quants/Omo-Wishes.svelte';
+  import OmoLeidenschaften from '../quants/OmoLeidenschaften.svelte';
   export let db;
   export let dream;
   export let currentId;
@@ -16,41 +17,10 @@
 </div>
 <div class="flex justify-center my-10">
   <div class="w-5/6 xl:w-4/6">
-
-    <img src="/images/divider-1.png" alt="divider" class="px-48 mt-8" />
-    <div class="text-2xl text-gray-600 text-center mt-6 mb-8">
-      Meine kleinen Freuden des Tages
-    </div>
-    <div class="flex content-start flex-wrap">
-      {#each wishes as wish}
-        <OmoWish {wish}/>
-      {/each}
-    </div>
+    <OmoWishes {wishes}/>
 
     <div class="flex content-start flex-wrap">
-
-      <div class="w-1/2 p-2">
-        <div class="flex flex-col bg-white px-8 py-6 rounded-lg shadow-lg">
-          <div class="flex justify-center items-center">
-            <a
-              class="p-3 py-1 bg-gray-600 text-sm text-green-100 rounded-full"
-              href="#">
-              Was mir Freude bereitet
-            </a>
-          </div>
-          <div class="mt-4 text-center">
-            <div class="px-6 pt-2 pb-2">
-              {#each leidenschaften as leidenschaft}
-                <span
-                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm
-                  font-semibold text-gray-700 mr-2 mb-2">
-                  #{leidenschaft.tag}
-                </span>
-              {/each}
-            </div>
-          </div>
-        </div>
-      </div>
+      <OmoLeidenschaften {leidenschaften}/>
       <div class="w-1/2 p-2">
         <div class="flex flex-col bg-white px-8 py-6 rounded-lg shadow-lg">
           <div class="flex justify-center items-center">
