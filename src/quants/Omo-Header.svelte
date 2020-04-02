@@ -21,10 +21,5 @@
           title="opa franz intro video" />
       </div>
     </div>
-    <h2
-      class="text-center text-6xl text-ci-2"
-      style="font-family: 'Indie Flower'!important;">
-      #KEINSAMKEIT
-    </h2>
   </div>
 </div>
