@@ -12,3 +12,4 @@ const router = {
 }
 export default router;
 export const curRoute = writable('/home');
+export const curId = writable(0);
