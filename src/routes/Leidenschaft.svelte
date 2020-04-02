@@ -6,9 +6,12 @@
   export let currentId;
   if (!leidenschaft)
     leidenschaft = db.leidenschaften.find(x => x.id == currentId);
-  let dreams = db.dreams.filter(x => x.leidenschaften.some(y=> y == leidenschaft.id));
-  let enkels = db.enkels.filter(x => x.leidenschaften.some(y => y == leidenschaft.id));
-
+  let dreams = db.dreams.filter(x =>
+    x.leidenschaften.some(y => y == leidenschaft.id)
+  );
+  let enkels = db.enkels.filter(x =>
+    x.leidenschaften.some(y => y == leidenschaft.id)
+  );
 </script>
 
 <div
@@ -17,10 +20,16 @@
   <p style="font-family: 'Indie Flower'!important;">{leidenschaft.tag}</p>
 </div>
 
-{#each db.leidenschaften as leidenschaft}
-       <a href="leidenschaft?id={leidenschaft.id}">{leidenschaft.tag}</a>
-      {/each}
-
+<div class="flex flex-wrap justify-center content-center px-6 pt-2">
+  {#each db.leidenschaften as leidenschaft}
+    <a
+      href="leidenschaft?id={leidenschaft.id}"
+      class="inline-block bg-gray-400 rounded-full px-3 py-1 text-sm
+      font-semibold text-gray-700 mr-2">
+      #{leidenschaft.tag}
+    </a>
+  {/each}
+</div>
 
 <OmoDreams {dreams} {db} />
 <OmoEnkels {enkels} {db} />
