@@ -14,7 +14,7 @@
 
     <div class="flex content-start flex-wrap">
       <div class="w-1/3 p-2">
-        <a href="chat">
+        <a >
           <div class="primary omo-border overflow-hidden omo-shadow">
             <img
               src="https://images.unsplash.com/photo-1519337718347-749509f114a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
@@ -32,7 +32,7 @@
       </div>
 
       <div class="w-1/3 p-2">
-        <a href="chat">
+        <a >
           <div class="primary omo-border overflow-hidden omo-shadow">
             <img
               src="https://images.unsplash.com/photo-1582578598774-a377d4b32223?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
@@ -49,7 +49,7 @@
         </a>
       </div>
       <div class="w-1/3 p-2">
-        <a href="chat">
+        <a >
           <div class="primary omo-border overflow-hidden omo-shadow">
             <img
               src="https://images.unsplash.com/photo-1489367874814-f5d040621dd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1329&q=80"
