@@ -3,7 +3,7 @@
 </script>
 
 <div class="w-1/4 p-2">
-  <a href="cities?id={city.id}">
+  <a href="city?id={city.id}">
     <div class="primary omo-border overflow-hidden omo-shadow">
       <img
         src={city.image}

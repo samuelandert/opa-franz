@@ -10,7 +10,7 @@
           class=" hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
           rounded-full px-3 py-1 text-lg font-semibold"
           style="font-family: 'Indie Flower'!important;">
-          Jetzt Lebensträume erfüllen
+          Jetzt Tandem finden
         </a>
       </div>
     </div>
