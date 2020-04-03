@@ -79,7 +79,7 @@
   <div class="w-5/6">
     <div class="flex justify-center">
       <a
-        href="dreams"
+        href="chat"
         class="hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
         font-semibold rounded-full px-6 py-3 text-3xl"
         style="font-family: 'Indie Flower'!important;">
