@@ -3,7 +3,7 @@
 </script>
 
 <div class="w-1/2 p-2">
-  <a href="enkels?id={enkel.id}">
+  <a href="enkel?id={enkel.id}">
     <div
       class="flex items-center rounded-lg bg-white shadow-lg overflow-hidden">
       <img

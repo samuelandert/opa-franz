@@ -19,7 +19,7 @@
         class="text-xl text-center p-4 text-gray-200 mb-2 bg-ci-2 flex flex-wrap
         justify-center content-center h-48">
         <p style="font-family: 'Indie Flower'!important;">
-          "{dream.name}'s großer Lebenstraum ist {dream.dream}"
+          "{dream.name} wünscht sich {dream.dream}"
         </p>
       </div>
       <div class="px-6 pt-2">

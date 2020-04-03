@@ -17,7 +17,7 @@
         omo-border ">
         <iframe
           class="embed-responsive-item"
-          src="https://www.youtube.com/embed/HfzZQvoJATA"
+          src="https://www.youtube.com/embed/sOH9erxUyk4"
           title="opa franz intro video" />
       </div>
     </div>

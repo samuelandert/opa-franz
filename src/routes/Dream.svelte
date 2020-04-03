@@ -25,7 +25,7 @@
   class="text-4xl text-center px-4 py-16 text-gray-200 bg-ci-2 flex flex-wrap
   justify-center content-center">
   <p style="font-family: 'Indie Flower'!important;">
-    "{dream.name}'s großer Lebenstraum ist es {dream.dream}"
+    "{dream.name}'s großer Wunsch ist es {dream.dream}"
   </p>
 </div>
 <div class="flex justify-center my-10">
@@ -75,25 +75,17 @@
   </div>
 </div>
 
-<div class="flex justify-center my-20">
+<div class="flex justify-center mt-6">
   <div class="w-5/6">
     <div class="flex justify-center">
       <a
-        href="dreams"
+        href="chat"
         class="hover:bg-orange-300 hover:text-gray-800 bg-ci text-gray-100
         font-semibold rounded-full px-6 py-3 text-3xl"
         style="font-family: 'Indie Flower'!important;">
-        Jetzt die Lebensträume von {dream.name} erfüllen
+        Jetzt mit {dream.name} ein Tandem bilden und anrufen oder schreiben
       </a>
     </div>
-    <!-- <div
-      class="p-4 text-2xl rounded-lg hover:bg-orange-300 hover:text-gray-800
-      bg-ci text-gray-100">
-      <a
-        href="#linktoitem"
-        class="flex justify-center text-center text-bolt uppercase">
-        Jetzt Lebensträume erfüllen
-      </a>
-    </div> -->
   </div>
 </div>
+<div class="p-12" />
